@@ -164,7 +164,7 @@ if __name__ == "__main__":
         save = eval(options.save)
     except TypeError:
         save = True
-    print(os.path.join(options.db, "places.sqlite"))
+
     if options.target.lower() == "cookies":
         read_moz_cookies(os.path.join(options.db, "cookies.sqlite"), verbose, save)
     elif options.target.lower() == "history":
