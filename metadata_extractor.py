@@ -114,8 +114,8 @@ if __name__ == "__main__":
     print('    #                most documents contain Metadata                      #')
     print('    #               for more info refer to Google/wiki                    #')
     print('    #######################################################################\n\n')
-    parser = optparse.OptionParser("Usage: python metadata_extractor.py -p <file path> -s <True or False>")
-    parser.add_option("-p", dest="file_path", type="string", help="provide the full path to the image file. eg: E:\images\img_1.jpg")
+    parser = optparse.OptionParser("Usage: python metadata_extractor.py -p <file path> -d <decryption key> -s <True or False>")
+    parser.add_option("-p", dest="file_path", type="string", help="provide the full path to the document file. eg: E:\doc.pdf")
     parser.add_option("-d", dest="dec_key", type="string", help="(optional) decryption key to use for encrypted pdf. default '' (blank password)")
     parser.add_option("-s", dest="save", type="string", help="(optional) save the metadata as a text file? default True")
 
