@@ -1,4 +1,4 @@
-# ForensicTools
+# Forensic_Tools
 A collection of tools for forensic analysis. Still a work in progress...
 
 # Usage:
