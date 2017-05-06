@@ -16,3 +16,5 @@ python metadata_extractor.py -p [document file path] -d [(optional)decryption ke
 firefox_scanner: use to parse Firefox profile  databases and can extract cookies, history, Google searches, downloads, and form history. Results are saved to a html table with background highlighting for easier reading. For more  details script name -h
 
 skype_scanner: use to parse Skype database. Can extract account details, contacts with their full details, call log, and messages. Results are saved to a html table with background highlighting for easier reading. For details, script name -h
+
+The common_methods.py file contains functions that are necessary for some scripts to work.
