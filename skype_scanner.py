@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 import sqlite3, os, sys, optparse
 from datetime import datetime as dt
-from time import mktime, strptime
 try:
     from common_methods import *
 except ImportError:
