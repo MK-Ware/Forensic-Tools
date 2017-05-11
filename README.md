@@ -4,6 +4,10 @@ A collection of tools for forensic analysis. Still a work in progress...
 # Disclaimer
 For educational use only. Author not responsible for malicious use!
 
+# Dependencies:
+lxml: https://pypi.python.org/pypi/lxml/3.7.3
+PyPDF2: https://pypi.python.org/pypi/PyPDF2/1.26.0
+
 # Usage:
 python [script name.py] -h at any time for help
 
