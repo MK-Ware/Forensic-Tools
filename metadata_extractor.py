@@ -126,7 +126,8 @@ def pdfMetaData(file_path, save=True):
     file_name = getFileName(file_path)
     metadata = "Time: %d/%d/%d %d : %d : %d. Found the following metadata for file %s:\n\n" % (now.year, now.month,
                                                                                                now.day, now.hour, now.minute,
-    try:                                                                                           now.second, file_name[:-4])
+                                                                                               now.second, file_name[:-4])
+    try:
         for md in doc_info:
             metadata += str(md[1:]) + " : " + pretifyPyPDF2Time(str(md[1:]) ,str(doc_info[md])) + "\n"
     except TypeError:
