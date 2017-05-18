@@ -126,9 +126,11 @@ def pdfMetaData(file_path, save=True):
     file_name = getFileName(file_path)
     metadata = "Time: %d/%d/%d %d : %d : %d. Found the following metadata for file %s:\n\n" % (now.year, now.month,
                                                                                                now.day, now.hour, now.minute,
-                                                                                               now.second, file_name[:-4])
-    for md in doc_info:
-        metadata += str(md[1:]) + " : " + pretifyPyPDF2Time(str(md[1:]) ,str(doc_info[md])) + "\n"
+    try:                                                                                           now.second, file_name[:-4])
+        for md in doc_info:
+            metadata += str(md[1:]) + " : " + pretifyPyPDF2Time(str(md[1:]) ,str(doc_info[md])) + "\n"
+    except TypeError:
+        sys.exit("Couldn't read document info! Make sure target is a valid pdf document...")
 
     metadata += "Last metadata mod Date: %s\nLast Mod Date: %s\nLast Access Date: %s\nOwner User ID: %s" %(dt.fromtimestamp(stats.st_ctime),
                                                                                                            dt.fromtimestamp(stats.st_mtime),
@@ -160,7 +162,7 @@ if __name__ == "__main__":
 
     path = options.file_path
     if not path:
-        print("please provide the path to the image file!")
+        print("please provide the path to the document!")
         sys.exit(parser.usage)
 
     save = options.save
