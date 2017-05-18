@@ -92,7 +92,7 @@ def read_chrome_logins(logins_db, tm_min=0, tm_max=10000000000000, domain=None):
         creation_date = dt.fromtimestamp(row[4]/10000000)
         form_data = row[6].decode("ISO-8859-1")
 
-        line = "<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td>" % (creation_date, row[0], row[3], row[1]) \
+        line = "<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td>" % (creation_date, row[3], row[0], row[1]) \
                + "<td>%s</td><td>%s</td><td>%s</td></tr>" % (row[2].decode("ISO-8859-1"), row[5], form_data)
         data += line
 
