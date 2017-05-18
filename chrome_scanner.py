@@ -109,8 +109,10 @@ if __name__ == "__main__":
     parser = optparse.OptionParser("Usage: python %prog -t <target> -b <(optional) chrome database path> or python %prog -h for help")
     target_help = "can take one of 4 values: history, google_searches, cookies, logins, or downloads"
     parser.add_option("-t", dest="target", type="string", help=target_help)
-    db_help = "The full path of the chrome database file to parse. By default, it's data/data/com.android.chrome/app_chrome/Default/History" \
-              + ". Copy it to your computer and point the script to it."
+    db_help = "The full path of the chrome database file to parse. By default, it's data/data/com.android.chrome/app_chrome/Default/" \
+              + "On android. On win vista or later C:\Users\USERNAME\AppData\Local\Google\Chrome\User Data\Default\databases" \
+              + ". On win xp: C:\Documents and Settings\USERNAME\Application Support\Google\Chrome\Default\databases" \
+              + ". On Linux: ~/.config/google-chrome/Default/databases. On Mac: ~/Library/Application Support/Google/Chrome/Default/databases"
     parser.add_option("-b", dest="db", type="string", help=db_help)
     min_help = "enter if target isn't 'cookies' to read items after a given date and time, must be a string separated by _ YYYY_MM_DD_HH_MM_SS"
     parser.add_option("--min_time", dest="min", type="string", help=min_help)
