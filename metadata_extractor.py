@@ -134,6 +134,8 @@ def pdfMetaData(file_path, save=True):
                                                                                                            dt.fromtimestamp(stats.st_mtime),
                                                                                                            dt.fromtimestamp(stats.st_atime),
                                                                                                            stats.st_uid)
+    if doc_info is None: 
+        sys.exit("darn... no metadata present...")
     try:
         print(metadata)
     except UnicodeEncodeError:
