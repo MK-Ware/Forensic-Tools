@@ -100,7 +100,7 @@ def read_chrome_logins(logins_db, tm_min=0, tm_max=10000000000000, domain=None):
     saveResult("chrome_logins.html", data)
     
 if __name__ == "__main__":
-    print('\n\n    ##############A Python script to read firefox browser data ############')
+    print('\n\n    ##############A Python script to read chrome  browser data ############')
     print('    #                      Coded by monrocoury                            #')
     print('    #              can read forms data, cookies, Google searches          #')
     print('    #                   and history to name a few                         #')
