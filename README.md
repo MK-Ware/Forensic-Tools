@@ -26,4 +26,6 @@ skype_scanner: use to parse Skype database. Can extract account details, contact
 
 whatsapp_scanner: use to parse What'sapp msgstoremsgstore and wa databases. Can extract messages with timestamps, location coordinates, media with media type, url, duration, timestamps and more, and contacts with full details. For details, script name -h
 
+chrome_scanner: use to parse chrome databases. Can extract downloads with full details (like start and end times, download linkslinks, full download size, percentage downloaded etc), History, cookies, Google searches, and login credentials. python chrome_scanner.py -h for details.
+
 The common_methods.py file contains functions that are necessary for some scripts to work. The templates directory contains static html templates required to organize the results in neat html tables. Both need to be present and unmodified in order for the scripts to work properly.
