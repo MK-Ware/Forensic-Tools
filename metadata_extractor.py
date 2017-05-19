@@ -117,8 +117,11 @@ def pdfMetaData(file_path, save=True):
     pdf_doc = PdfFileReader(open(file_path, "rb"))
 
     if pdf_doc.isEncrypted:
-        if pdf_doc.decrypt("") != 1:
-            sys.exit("target pdf document is encrypted... exiting...")
+        try:
+            if pdf_doc.decrypt("") != 1:
+                sys.exit("target pdf document is encrypted... exiting...")
+        except:
+            sys.exit("target pdf document is encrypted with an unsupported algorithm... exiting...")
 
     doc_info = pdf_doc.getDocumentInfo()
     stats = os.stat(file_path)
