@@ -50,8 +50,7 @@ Last Modification Time: %s\nXML Modification Time: %s\nLast Access Time: %s""" %
     try:
         print(metadata)
     except UnicodeEncodeError:
-        os.system("chcp 65001")
-        print(metadata)
+        print("Console encoding can't decode the result. Enter chcp 65001 in the console and rerun the script.")
 
     if save:
         file_name = getFileName(file_path)
@@ -85,8 +84,7 @@ def oleMetaData(file_path, save=True):
         try:
             print(metadata)
         except UnicodeEncodeError:
-            os.system("chcp 65001")
-            print(metadata)
+            print("Console encoding can't decode the result. Enter chcp 65001 in the console and rerun the script.")
 
         if save:
             file_name = getFileName(file_path)
@@ -143,8 +141,7 @@ def pdfMetaData(file_path, save=True):
     try:
         print(metadata)
     except UnicodeEncodeError:
-        os.system("chcp 65001")
-        print(metadata)
+        print("Console encoding can't decode the result. Enter chcp 65001 in the console and rerun the script.")
 
     if save:
         file_name = getFileName(file_path)
