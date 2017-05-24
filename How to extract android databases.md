@@ -1,4 +1,4 @@
--If the target device has USB debugging enabled:
+# If the target device has USB debugging enabled:
 ____________________________________________________________________________
 If the target device has USB debugging enabled, it doesn't matter whether or not it is locked with a PIN, pattern, or password.
 
@@ -39,8 +39,9 @@ D:\Program Files\Minimal ADB and Fastboot>adb pull /sdcard/msgstore.db
 Wait for your computer to finish copying the database file from the target device to the working directory... Done! Check the working directory (D:\Program Files\Minimal ADB and Fastboot), it should contain the database file (in our example msgstore.db).
 
 You can use these steps to copy any database file from an android device that has USB debugging enabled. If the target device doesn't have USB debugging enabled, you can enable it by going to settings --> developer options --> check USB debugging (or ADB debugging in some ROMs). If you can't see developer options, settings --> About --> Software Information --> More --> tap build number untill you see a toast saying developer options enabled or you are now a developer (usually you will need to tap it 7 times).
+___________________________________________________________________________________________________________________________________________
 
--If the target device is Locked AND doesn't have USB debugging enabled:
+# If the target device is Locked AND doesn't have USB debugging enabled:
 ____________________________________________________________________________
 If the target device is locked, and doesn't have USB debugging enabled, you will have to install a custom recovery and then install aroma file manager. Usually that requires rooting your android device. You might find a way to unlock your android device without rooting it, but this is the rare exception, not the rule. For more info refer to google.
 
