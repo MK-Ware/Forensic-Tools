@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import optparse
 from datetime import datetime as dt
 try:
@@ -130,24 +131,4 @@ if __name__ == "__main__":
         sys.exit("Unrecognized target function!")
 
     db = options.db
-    dom = options.host_domain
-
-    if options.min:
-        min_time = time_to_epoch(options.min)
-    else:
-        min_time = 0
-    if options.max:
-        max_time = time_to_epoch(options.min)
-    else:
-        max_time = 10000000000000
-
-    if options.target.lower() == "cookies":
-        read_chrome_cookies(db, tm_min=min_time, tm_max=max_time, host=dom)
-    elif options.target.lower() == "history":
-        read_chrome_history(db, tm_min=min_time, tm_max=max_time, google=False)
-    elif options.target.lower() == "google_searches":
-        read_chrome_history(db, tm_min=min_time, tm_max=max_time, google=True)
-    elif options.target.lower() == "downloads":
-        read_chrome_downloads(db, tm_min=min_time, tm_max=max_time)
-    elif options.target.lower() == "logins":
-        read_chrome_logins(db, tm_min=min_time, tm_max=max_time, domain=dom)
+    d
