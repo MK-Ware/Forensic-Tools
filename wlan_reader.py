@@ -52,6 +52,7 @@ if __name__ == "__main__":
     print('    #              of the wireless network with the help of online          #')
     print('    #              databases like wigle or skyhook, a feature I\'m           #')
     print('    #     planning on adding to this script to save you the effort          #')
+    print('    #            Make sure you run command prompt as administrator          #')
     print('    #                      Coded by monrocoury                              #')
     print('    #########################################################################\n\n')
     print("Working...\n")
