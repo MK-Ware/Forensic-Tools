@@ -28,4 +28,6 @@ whatsapp_scanner: use to parse What'sapp msgstoremsgstore and wa databases. Can 
 
 chrome_scanner: use to parse chrome databases. Can extract downloads with full details (like start and end times, download linkslinks, full download size, percentage downloaded etc), History, cookies, Google searches, and login credentials. python chrome_scanner.py -h for details.
 
+wlan_reader: use to get WIFI network history from windows registry. You don't have to give it any arguments, just make sure you run the command prompt as administrator, then enter python wlan_reader.py.
+
 The common_methods.py file contains functions that are necessary for some scripts to work. The templates directory contains static html templates required to organize the results in neat html tables. Both need to be present and unmodified in order for the scripts to work properly.
