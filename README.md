@@ -28,7 +28,7 @@ skype_scanner: use to parse Skype database. Can extract account details, contact
 
 whatsapp_scanner: use to parse What'sapp msgstoremsgstore and wa databases. Can extract messages with timestamps, location coordinates, media with media type, url, duration, timestamps and more, and contacts with full details. For details, script name -h
 
-chrome_scanner: use to parse chrome databases. Can extract downloads with full details (like start and end times, download linkslinks, full download size, percentage downloaded etc), History, cookies, Google searches, and login credentials. python chrome_scanner.py -h for details.
+chrome_scanner: use to parse chrome databases. Can extract downloads with full details (like start and end times, download links, full download size, percentage downloaded etc), History, cookies, Google searches, and login credentials. python chrome_scanner.py -h for details.
 
 wlan_reader: use to get WIFI network history from windows registry. You don't have to give it any arguments, just make sure you run the command prompt as administrator, then enter python wlan_reader.py.
 
