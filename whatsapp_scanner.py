@@ -34,7 +34,7 @@ partner: chat partner, default value None
 tm_min: minimum Message timestamp, default value 0
 tm_max: maximum Message timestamp, default value 10000000000000
 get_partner_name: pass True to display name instead of phone number in from/to fields'''
-    command = command = "SELECT key_from_me, status, data, timestamp, receipt_server_timestamp, receipt_device_timestamp," \
+    command = "SELECT key_from_me, status, data, timestamp, receipt_server_timestamp, receipt_device_timestamp," \
               + " read_device_timestamp, played_device_timestamp, media_url, media_caption, media_duration, latitude," \
               + " longitude, media_wa_type, needs_push, recipient_count, key_remote_jid from messages" \
               + " WHERE (timestamp > %s AND timestamp < %s);" % (tm_min, tm_max)
