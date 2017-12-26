@@ -24,6 +24,8 @@ python metadata_extractor.py -p [document file path] -d [(optional)decryption ke
 
 firefox_scanner: use to parse Firefox profile  databases and can extract cookies, history, Google searches, downloads, and form history. Results are saved to a html table with background highlighting for easier reading. For more  details script name -h
 
+facebook_scanner.py: use to analyze facebook app and facebook messenger app artifacts, still fairly new and currently only tested with lite versions. Can extract messages with time, links, attachments, contacts with profile pictures and profile links, and details regarding the accounts used to log into the app plus more.
+
 skype_scanner: use to parse Skype database. Can extract account details, contacts with their full details, call log, and messages. Results are saved to a html table with background highlighting for easier reading. For details, script name -h
 
 whatsapp_scanner: use to parse What'sapp msgstoremsgstore and wa databases. Can extract messages with timestamps, location coordinates, media with media type, url, duration, timestamps and more, and contacts with full details. For details, script name -h
