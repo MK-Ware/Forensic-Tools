@@ -2,13 +2,17 @@
 import sys, os, optparse
 from PIL import Image
 from PIL.ExifTags import TAGS
-from common_tools import *
+from common_methods import *
+from datetime import datetime
 
 
 def getExif(image_file, save=True, verbose=True):
     '''Get image file EXIF metadata'''
     if not os.path.isfile(image_file):
         sys.exit("%s is not a valid image file!")
+    
+    name = getFileName(image_file)
+    now = datetime.now()
     data = "Time: %d/%d/%d %d : %d : %d. Found the following Exif data for the image %s:\n\n" % (now.year, now.month,
                                                                                                  now.day, now.hour, now.minute,
                                                                                                  now.second, name)
@@ -32,7 +36,6 @@ def getExif(image_file, save=True, verbose=True):
         data += "{}    :   {}\n".format(key, exif_data[key])
 
     if save:
-        name = getFileName(image_file)
         tgt = name + ".txt"
         saveResult(tgt, data)
 
