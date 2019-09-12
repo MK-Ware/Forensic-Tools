@@ -1,0 +1,8 @@
+Django==2.2.5
+image==1.5.27
+lxml==4.4.1
+olefile==0.46
+Pillow==6.1.0
+PyPDF2==1.26.0
+pytz==2019.2
+sqlparse==0.3.0
