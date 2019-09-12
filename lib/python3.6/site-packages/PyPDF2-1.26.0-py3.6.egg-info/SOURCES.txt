@@ -1,0 +1,15 @@
+CHANGELOG
+MANIFEST.in
+PyPDF2/__init__.py
+PyPDF2/_version.py
+PyPDF2/filters.py
+PyPDF2/generic.py
+PyPDF2/merger.py
+PyPDF2/pagerange.py
+PyPDF2/pdf.py
+PyPDF2/utils.py
+PyPDF2/xmp.py
+PyPDF2.egg-info/PKG-INFO
+PyPDF2.egg-info/SOURCES.txt
+PyPDF2.egg-info/dependency_links.txt
+PyPDF2.egg-info/top_level.txt
